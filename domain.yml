@@ -4,14 +4,27 @@ intents:
   - affirm
   - deny
   - bot_challenge
-  - ask_recommendation
+  - ask_recommend:
+      triggers: action_recommend
   - request_activity_link:
       triggers: utter_activity_link
 
 actions:
-- action_recommend
+- action_get_recommendation
+
+entities:
+  - continent
+  - activity_type
 
 slots:
+  continent:
+    slot_type: unfeaturized
+  activity_type:
+    slot_type: unfeaturized
+  price:
+    slot_type: unfeaturized
+  family_friendly:
+    slot_type: unfeaturized
   recommended_location:
     slot_type: unfeaturized
   activities_link:
@@ -21,9 +34,20 @@ responses:
   utter_greet:
   - text: "Hi there! I can help you find a cool new place to travel to."
 
-  utter_start_filter:
-  - text: "I'll help you narrow down the options. When you're tired of answering questions, just ask me for a recommendation! \n\n
-           Do you want to look in specific locations, or based on your interests?"
+  utter_explain_process:
+  - text: "I'll help you narrow down the options. When you're tired of answering questions, just ask me for a recommendation!"
+
+  utter_ask_continent:
+    - text: "What continent do you want to go to?"
+
+  utter_ask_activity_type:
+    - text: "Are you interested in indoor or outdoor activities?"
+
+  utter_ask_budget:
+    - text: "Are you travelling on a budget?"
+
+  utter_ask_kids:
+    - text: "Are you travelling with children?"
 
   utter_recommend:
   - text: "I think you should check out {recommended_location}!"
