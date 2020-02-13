@@ -6,6 +6,31 @@
 - ok i'm done, where should i go? 
 - where do you think i should go? 
 - i'm ready for a recommendation!
+- suggest some places
+- I am tired
+- Please no more questions
+- I want to be done
+- Just give me a recc
+
+## intent:inform
+- [Asia](continent)
+- [asia](continent)
+- [Europe](continent)
+- [europe](continent)
+- [North America](continent)
+- [north america](continent)
+- [South America](continent)
+- [south america](continent)
+- [Africa](continent)
+- [africa](continent)
+- [Australia](continent)
+- [austrilia](continent)
+- [Outdoors](activity_type)
+- [outdoors](activity_type)
+- [indoors](activity_type)
+- [Indoors](activity_type)
+- [inside](activity_type)
+- [outside](acitivity_type)
 
 ## intent:greet
 - hey
@@ -14,12 +39,19 @@
 - good morning
 - good evening
 - hey there
+- Yo
+- Howdy
+- How is it going
 
 ## intent:goodbye
 - bye
 - goodbye
 - see you around
 - see you later
+- bye bye
+- see ya
+- c u l9r k8r
+- have a nice life
 
 ## intent:affirm
 - yes
@@ -27,6 +59,18 @@
 - of course
 - that sounds good
 - correct
+- yep
+- yeah 
+- indeed
+- that's right
+- ok
+- great
+- yes please
+- please yes
+- yes sir
+- yupp
+- yuh
+- YES
 
 ## intent:deny
 - no
@@ -35,6 +79,13 @@
 - don't like that
 - no way
 - not really
+- nope
+- never again
+- please no
+- no please
+- no no no
+- not a chance
+- NO
 
 ## intent:bot_challenge
 - are you a bot?
