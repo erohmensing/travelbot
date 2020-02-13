@@ -1,3 +1,12 @@
+## intent:ask_recommendation
+- i'd like a recommendation
+- recommend me something
+- give me a recommendation
+- ok i'm done, recommend me something
+- ok i'm done, where should i go? 
+- where do you think i should go? 
+- i'm ready for a recommendation!
+
 ## intent:greet
 - hey
 - hello
@@ -26,28 +35,6 @@
 - don't like that
 - no way
 - not really
-
-## intent:mood_great
-- perfect
-- very good
-- great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
-
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
 
 ## intent:bot_challenge
 - are you a bot?

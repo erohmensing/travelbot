@@ -3,34 +3,36 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
   - bot_challenge
+  - ask_recommendation
+  - request_activity_link:
+      triggers: utter_activity_link
 
 actions:
-- utter_greet
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
-- utter_goodbye
-- utter_iamabot
+- action_recommend
+
+slots:
+  recommended_location:
+    slot_type: unfeaturized
+  activities_link:
+    slot_type: unfeaturized
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hi there! I can help you find a cool new place to travel to."
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_start_filter:
+  - text: "I'll help you narrow down the options. When you're tired of answering questions, just ask me for a recommendation! \n\n
+           Do you want to look in specific locations, or based on your interests?"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_recommend:
+  - text: "I think you should check out {recommended_location}!"
+    buttons:
+      - title: "See activities in {recommended_location}"
+        payload: /request_activity_link
 
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
+  utter_activity_link:
+    - text: "Here you can find activities in {recommended_location}: {activities_link}"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
