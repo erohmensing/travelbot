@@ -10,6 +10,7 @@
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
+from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
 
 
@@ -47,4 +48,4 @@ class ActionRecommend(Action):
         city = "dubai"
         activities_link = f"https://www.getyourguide.co.uk/s/?q={city}"
 
-        return [SlotSet("location", city), SlotSet("activities_link", activities_link)]
+        return [SlotSet("recommended_location", city), SlotSet("activities_link", activities_link)]

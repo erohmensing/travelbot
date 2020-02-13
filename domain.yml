@@ -4,8 +4,9 @@ intents:
   - affirm
   - deny
   - bot_challenge
+  - inform
   - ask_recommend:
-      triggers: action_recommend
+      triggers: action_get_recommendation
   - request_activity_link:
       triggers: utter_activity_link
 
@@ -18,17 +19,17 @@ entities:
 
 slots:
   continent:
-    slot_type: unfeaturized
+    type: unfeaturized
   activity_type:
-    slot_type: unfeaturized
+    type: unfeaturized
   price:
-    slot_type: unfeaturized
+    type: unfeaturized
   family_friendly:
-    slot_type: unfeaturized
+    type: unfeaturized
   recommended_location:
-    slot_type: unfeaturized
+    type: unfeaturized
   activities_link:
-    slot_type: unfeaturized
+    type: unfeaturized
 
 responses:
   utter_greet:
@@ -46,13 +47,13 @@ responses:
   utter_ask_budget:
     - text: "Are you travelling on a budget?"
 
-  utter_ask_kids:
+  utter_ask_children:
     - text: "Are you travelling with children?"
 
   utter_recommend:
   - text: "I think you should check out {recommended_location}!"
     buttons:
-      - title: "See activities in {recommended_location}"
+      - title: "See activities"
         payload: /request_activity_link
 
   utter_activity_link:

@@ -3,7 +3,7 @@
   - utter_greet
   - utter_explain_process
   - utter_ask_continent
-* inform{"continent": "asia"}
+* inform{"continent": "asia"} OR inform
   - utter_ask_activity_type
 * inform{"activity_type": "outdoors"}
   - utter_ask_budget
@@ -18,7 +18,7 @@
   - utter_greet
   - utter_explain_process
   - utter_ask_continent
-* inform{"continent": "asia"}
+* inform{"continent": "asia"} OR inform
   - utter_ask_activity_type
 * inform{"activity_type": "outdoors"}
   - utter_ask_budget
@@ -33,7 +33,7 @@
   - utter_greet
   - utter_explain_process
   - utter_ask_continent
-* inform{"continent": "asia"}
+* inform{"continent": "asia"} OR inform
   - utter_ask_activity_type
 * inform{"activity_type": "outdoors"}
   - utter_ask_budget
@@ -46,7 +46,7 @@
   - utter_greet
   - utter_explain_process
   - utter_ask_continent
-* inform{"continent": "asia"}
+* inform{"continent": "asia"} OR inform
   - utter_ask_activity_type
 * ask_recommend
   - action_get_recommendation
