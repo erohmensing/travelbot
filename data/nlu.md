@@ -73,6 +73,7 @@
 - correct
 - yep
 - yeah
+- indeed
 - that's right
 - ok
 - great
@@ -105,12 +106,14 @@
 - am I talking to a human?
 
 ## synonym:indoor
+- indoor
 - indoors
 - inside
 
 ## synonym:outdoor
+- outdoor
 - outside
 - outdoors
 
 ## lookup:continents
-  /app/git/1/data/continents
+- ./data/continents
