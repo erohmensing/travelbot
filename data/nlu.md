@@ -3,8 +3,8 @@
 - recommend me something
 - give me a recommendation
 - ok i'm done, recommend me something
-- ok i'm done, where should i go? 
-- where do you think i should go? 
+- ok i'm done, where should i go?
+- where do you think i should go?
 - i'm ready for a recommendation!
 - suggest some places
 - I am tired
@@ -34,14 +34,15 @@
 - [indoor](activity_type)
 - [Indoors](activity_type)
 - [inside](activity_type)
-- [outside](acitivity_type)
+- [outside](activity_type)
 - i don't care
-- either one 
+- either one
 - either or!
 - both
 - both sound great
 - whatever
 - doesn't matter to me
+- i want to be [outside](activity_type)
 
 ## intent:greet
 - hey
@@ -71,8 +72,7 @@
 - that sounds good
 - correct
 - yep
-- yeah 
-- indeed
+- yeah
 - that's right
 - ok
 - great
@@ -109,8 +109,8 @@
 - inside
 
 ## synonym:outdoor
-- outdoors
 - outside
+- outdoors
 
 ## lookup:continents
-- ./data/continents.txt
+  /app/git/1/data/continents
