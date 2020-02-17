@@ -1,4 +1,4 @@
-## intent:ask_recommendation
+## intent:ask_recommend
 - i'd like a recommendation
 - recommend me something
 - give me a recommendation
@@ -11,6 +11,7 @@
 - Please no more questions
 - I want to be done
 - Just give me a recc
+- aight i'm done
 
 ## intent:inform
 - [Asia](continent)
@@ -26,11 +27,21 @@
 - [Australia](continent)
 - [austrilia](continent)
 - [Outdoors](activity_type)
+- [Outdoor](activity_type)
 - [outdoors](activity_type)
 - [indoors](activity_type)
+- i'd rather stay [indoors](activity_type)
+- [indoor](activity_type)
 - [Indoors](activity_type)
 - [inside](activity_type)
 - [outside](acitivity_type)
+- i don't care
+- either one 
+- either or!
+- both
+- both sound great
+- whatever
+- doesn't matter to me
 
 ## intent:greet
 - hey
@@ -92,3 +103,14 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+
+## synonym:indoor
+- indoors
+- inside
+
+## synonym:outdoor
+- outdoors
+- outside
+
+## lookup:continents
+- ./data/continents.txt

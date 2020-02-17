@@ -1,67 +1,65 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - bot_challenge
-  - inform
-  - ask_recommend:
-      triggers: action_get_recommendation
-  - request_activity_link:
-      triggers: utter_activity_link
-
-actions:
-- action_get_recommendation
-
+- greet
+- goodbye
+- affirm
+- deny
+- bot_challenge
+- inform
+- ask_recommend:
+    triggers: action_get_recommendation
+- request_activity_link:
+    triggers: utter_activity_link
 entities:
-  - continent
-  - activity_type
-
+- continent
+- activity_type
+- acitivity_type
 slots:
-  continent:
+  activities_link:
     type: unfeaturized
   activity_type:
     type: unfeaturized
-  price:
+  continent:
     type: unfeaturized
   family_friendly:
     type: unfeaturized
+  price:
+    type: unfeaturized
   recommended_location:
     type: unfeaturized
-  activities_link:
-    type: unfeaturized
-
 responses:
   utter_greet:
-  - text: "Hi there! I can help you find a cool new place to travel to."
-
+  - text: Hi there! I can help you find a cool new place to travel to.
   utter_explain_process:
-  - text: "I'll help you narrow down the options. When you're tired of answering questions, just ask me for a recommendation!"
-
+  - text: I'll help you narrow down the options. When you're tired of answering questions,
+      just ask me for a recommendation!
   utter_ask_continent:
-    - text: "What continent do you want to go to?"
-
+  - text: What continent do you want to go to?
   utter_ask_activity_type:
-    - text: "Are you interested in indoor or outdoor activities?"
-
+  - text: Are you interested in indoor or outdoor activities?
   utter_ask_budget:
-    - text: "Are you travelling on a budget?"
-
+  - text: Are you travelling on a budget?
   utter_ask_children:
-    - text: "Are you travelling with children?"
-
+  - text: Are you travelling with children?
   utter_recommend:
-  - text: "I think you should check out {recommended_location}!"
+  - text: I think you should check out {recommended_location}!
     buttons:
-      - title: "See activities"
-        payload: /request_activity_link
-
+    - title: See activities
+      payload: /request_activity_link
   utter_activity_link:
-    - text: "Here you can find activities in {recommended_location}: {activities_link}"
-
+  - text: 'Here you can find activities in {recommended_location}: {activities_link}'
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  - text: I am a bot, powered by Rasa.
+actions:
+- action_get_recommendation
+- utter_greet
+- utter_explain_process
+- utter_ask_continent
+- utter_ask_activity_type
+- utter_ask_budget
+- utter_ask_children
+- utter_recommend
+- utter_activity_link
+- utter_iamabot
