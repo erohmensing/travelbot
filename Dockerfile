@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY ./actions.py /app/actions.py
 
-CMD ["start"]
+CMD ["start", "--actions", "actions"]
